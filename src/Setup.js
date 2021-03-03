@@ -13,7 +13,7 @@ export default function Setup({ word, setWord, wpm, setWpm, onStart }) {
           max={1000}
           step={40}
         />
-        <p>{wpm} words per minute</p>
+        <p>{wpm} wpm</p>
       </div>
 
       <button className="btn" onClick={onStart} disabled={word.length === 0}>
