@@ -24,7 +24,7 @@ export default function Runner({ word = "", wpm, onReturn }) {
         }
         return idx + 1;
       });
-    }, (60 * 1000) / wpm);
+    }, (60 / wpm) * 1000);
   }
 
   function stop() {
