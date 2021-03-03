@@ -16,9 +16,12 @@ export default function Runner({ word = "", wpm, onReturn }) {
     setIsRunning(true);
     intervalId.current = setInterval(() => {
       setCurrentIndex((idx) => {
-        const nextIndex = idx + 1;
-        if (nextIndex >= lastWordIndex) stop();
-        return nextIndex;
+        if (idx >= lastWordIndex) {
+          // do nothing & stop interval
+          stop();
+          return idx;
+        }
+        return idx + 1;
       });
     }, (60 * 1000) / wpm);
   }
