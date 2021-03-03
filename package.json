@@ -1,5 +1,5 @@
 {
-  "name": "words-per-minute",
+  "name": "speed-reader",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
