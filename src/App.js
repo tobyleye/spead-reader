@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Setup from "./Setup";
 import Runner from "./Runner";
+import { placeholder } from "./placeholder";
 import "./App.css";
 
 function App() {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState(placeholder);
   const [wpm, setWpm] = useState(20);
 
   const [startRunner, setStartRunner] = useState(false);
