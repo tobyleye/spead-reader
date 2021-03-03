@@ -37,7 +37,7 @@ export default function Runner({ word = "", wpm, onReturn }) {
 
   return (
     <section className="runner">
-      <p>Playing at {wpm} words per minute </p>
+      {/* <p>Playing at {wpm} words per minute </p> */}
       <div className="screen">{words[currentIndex]}</div>
       <button className="btn" onClick={onReturn}>
         Return

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h3 className="title">Word per minute.</h3>
+      <h3 className="title">Speed Reader</h3>
       {startRunner ? (
         <Runner word={word} wpm={wpm} onReturn={() => setStartRunner(false)} />
       ) : (

@@ -17,7 +17,7 @@ export default function Setup({ word, setWord, wpm, setWpm, onStart }) {
       </div>
 
       <button className="btn" onClick={onStart} disabled={word.length === 0}>
-        Let's Go
+        I'm ready
       </button>
     </section>
   );
