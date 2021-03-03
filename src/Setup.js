@@ -16,7 +16,9 @@ export default function Setup({ word, setWord, wpm, setWpm, onStart }) {
         <p>{wpm} words per minute</p>
       </div>
 
-      <button onClick={onStart}>Let's Go</button>
+      <button onClick={onStart} disabled={word.length === 0}>
+        Let's Go
+      </button>
     </section>
   );
 }
