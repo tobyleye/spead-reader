@@ -10,6 +10,7 @@ export default function Runner({ word = "", wpm, onReturn }) {
   useEffect(() => {
     start();
     return stop;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function start() {
