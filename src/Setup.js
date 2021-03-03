@@ -1,10 +1,10 @@
 export default function Setup({ word, setWord, wpm, setWpm, onStart }) {
   return (
-    <section>
+    <section className="setup">
       <div>
         <textarea value={word} onChange={(e) => setWord(e.target.value)} />
       </div>
-      <div>
+      <div className="input-range">
         <input
           type="range"
           value={wpm}
@@ -16,7 +16,7 @@ export default function Setup({ word, setWord, wpm, setWpm, onStart }) {
         <p>{wpm} words per minute</p>
       </div>
 
-      <button onClick={onStart} disabled={word.length === 0}>
+      <button className="btn" onClick={onStart} disabled={word.length === 0}>
         Let's Go
       </button>
     </section>

@@ -36,23 +36,12 @@ export default function Runner({ word = "", wpm, onReturn }) {
   const onNextWord = () => setCurrentIndex((idx) => idx + 1);
 
   return (
-    <section>
-      <h3>Runner</h3>
-      <p>Get ready to read at {wpm} words per minute </p>
-      <div
-        style={{
-          height: 200,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          border: "1px solid lightgreen",
-          margin: "20px 0",
-          fontSize: 25,
-        }}
-      >
-        {words[currentIndex]}
-      </div>
-      <button onClick={onReturn}>Return</button>
+    <section className="runner">
+      <p>Playing at {wpm} words per minute </p>
+      <div className="screen">{words[currentIndex]}</div>
+      <button className="btn" onClick={onReturn}>
+        Return
+      </button>
       <div className="controls">
         <button
           disabled={currentIndex === 0 || isRunning}
